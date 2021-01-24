@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Inchoo Cart</title>
+	</head>
+	<body>
+		<!-- Page Container -->
+		<div class="container">
+			<nav>
+				<span>&nbsp;</span>
+
+				<!-- Cart -->
+				<div class="cart">
+					<!-- Open / Close Cart Button -->
+					<button class="cart-btn-icon" id="cart-btn-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</button>
+
+					<!-- Cart Container -->
+					<div class="cart-box" id="cart-box">
+						<span class="cart-box-tip"></span>
+						<h3 class="cart-box-heading">
+							My Cart (<span id="num-of-items"></span>)
+						</h3>
+
+						<!-- See Previous Item Button -->
+						<button
+							class="cart-box-control control-disabled"
+							id="cart-box-control-previous"
+						>
+							<i class="fas fa-arrow-up"></i>
+						</button>
+
+						<!-- List of Items -->
+						<ul class="cart-list">
+							<!-- Item 1 -->
+							<li class="cart-item show-cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/eastwoodacousticguitar.png"
+										alt="eastacoustic"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Acoustic Guitar
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Eastwood</span>
+										<span>Color: Black</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $650.00
+									</div>
+								</div>
+							</li>
+
+							<!-- Item 2 -->
+							<li class="cart-item show-cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/fenderguitaramp.png"
+										alt="fenderamp"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Guitar Amplifier
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Fender</span>
+										<span>Power: 100W</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $1050.00
+									</div>
+								</div>
+							</li>
+
+							<!-- Item 3 -->
+							<li class="cart-item show-cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/line6delaymodeler.png"
+										alt="line6modeler"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Delay Modeler
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Line 6</span>
+										<span>Color: Green</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $200.00
+									</div>
+								</div>
+							</li>
+
+							<!-- Item 4 -->
+							<li class="cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/ibanezelectricguitar.png"
+										alt="ibanezelectric"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Electric Guitar
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Ibanez</span>
+										<span>Color: Black</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $700.00
+									</div>
+								</div>
+							</li>
+
+							<!-- Item 5 -->
+							<li class="cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/rolandmixingconsole.png"
+										alt="rolandmixer"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Mixing Console
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Roland</span>
+										<span>Channels: 8 Stereo</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $2300.00
+									</div>
+								</div>
+							</li>
+
+							<!-- Item 6 -->
+							<li class="cart-item">
+								<div class="cart-item-img">
+									<img
+										src="img/ibanezbasguitar.png"
+										alt="ibanezbas"
+									/>
+								</div>
+								<div class="cart-item-info">
+									<h4 class="cart-item-name">
+										Electric Bas Guitar
+									</h4>
+									<div class="cart-item-spec">
+										<span>Brand: Ibanez</span>
+										<span>Color: Red</span>
+									</div>
+									<div class="cart-item-amount">
+										1 x $950.00
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<!-- See Next Item Button -->
+						<button
+							class="cart-box-control"
+							id="cart-box-control-next"
+						>
+							<i class="fas fa-arrow-down"></i>
+						</button>
+
+						<!-- Edit & Checkout Buttons -->
+						<div class="cart-manager">
+							<button class="btn-edit">Edit Cart</button>
+							<button class="btn-checkout">Checkout</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
